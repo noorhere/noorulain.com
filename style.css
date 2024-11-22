@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer */
+header {
+    background-color: #1a1a1a; /* Black background */
+    padding: 20px;
+    text-align: center;
+    color: #f0c400; /* Golden text */
+}
+
+footer {
+    background-color: #1a1a1a; /* Black background */
+    padding: 10px;
+    text-align: center;
+    color: #f0c400; /* Golden text */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Buttons */
+.button {
+    padding: 12px 25px;
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #f0c400; /* Golden background on hover */
+    color: #1a1a1a; /* Black text on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1a1a1a; /* Black background */
+}
+
+h2, h3 {
+    text-align: center;
+    color: #f0c400; /* Golden text */
+}
+
+h2 strong, h3 strong {
+    font-size: 1.8rem;
+}
+
+/* About Information */
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-card {
+    background-color: #2b2b2b; /* Darker black for card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 30%;
+}
+
+.about-card h3 {
+    color: #f0c400; /* Golden text */
+}
+
+.about-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e6e6e6; /* Light grey text for body */
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #1a1a1a; /* Black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.skills-card {
+    background-color: #333; /* Dark grey for cards */
+    padding: 15px;
+    border-radius: 8px;
+    width: 18%;
+    text-align: center;
+}
+
+.skills-card h4 {
+    color: #f0c400; /* Golden text */
+}
+
+.skills-card p {
+    font-size: 1rem;
+    color: #e6e6e6; /* Light grey text */
+}
+
+/* YouTube Section */
+.youtube-section {
+    background-color: #1a1a1a; /* Black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+
+.youtube-section h3 {
+    color: #f0c400; /* Golden text */
+}
+
+.youtube-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.youtube-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.youtube-card p {
+    font-size: 1rem;
+    color: #e6e6e6; /* Light grey text */
+}
+
+/* Contact Form */
+.contact-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-section h3 {
+    color: #f0c400; /* Golden text */
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333; /* Dark grey input fields */
+    color: #f0c400; /* Golden text */
+}
+
+.contact-section button {
+    padding: 12px 25px;
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #f0c400; /* Golden background on hover */
+    color: #1a1a1a; /* Black text on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-details {
+        flex-direction: column;
+    }
+
+    .skills-cards {
+        flex-direction: column;
+    }
+
+    .skills-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Pages for Skills (Sub-pages) */
+.skills-page {
+    background-color: #1a1a1a; /* Black background */
+    padding: 40px;
+    color: #f0c400; /* Golden text */
+    margin-top: 20px;
+}
+
+.skills-page h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills-page p {
+    font-size: 1rem;
+    color: #e6e6e6; /* Light grey text */
+}
+
+.skills-page img {
+    width: 80px;
+    margin-top: 20px;
+}
+
+/* Contact Form Section on New Page */
+.contact-form-page {
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact-form-page input, .contact-form-page textarea {
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333; /* Dark grey */
+    color: #f0c400; /* Golden text */
+}
+
+.contact-form-page button {
+    padding: 12px 25px;
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-page button:hover {
+    background-color: #f0c400; /* Golden background */
+    color: #1a1a1a; /* Black text */
+}
+
+/* New Page (for Skills, About Us, etc.) */
+.page {
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.page h2 {
+    font-size: 2rem;
+    color: #f0c400; /* Golden text */
+    text-align: center;
+}
+
+.page p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e6e6e6; /* Light grey text */
+}
+
+.page img {
+    margin-top: 20px;
+}
+
+/* Additional Styles for Clicked Pages */
+.skills-page, .about-page, .contact-page {
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+}
+
+/* Specific Styles for Each Skill Page (HTML, JS, etc.) */
+.html-page, .js-page, .python-page, .css-page, .react-page {
+    background-color: #1a1a1a; /* Black background */
+    color: #f0c400; /* Golden text */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.html-page h2, .js-page h2, .python-page h2, .css-page h2, .react-page h2 {
+    font-size: 2rem;
+    color: #f0c400; /* Golden text */
+}
+
+.html-page p, .js-page p, .python-page p, .css-page p, .react-page p {
+    font-size: 1.2rem;
+    color: #e6e6e6; /* Light grey text */
+}
+
